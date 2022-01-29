@@ -1,0 +1,175 @@
+header{
+  background: #f2f4f4;
+
+  .header-content-wrapper{
+    .header-menu {
+      nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        .menu-wrapper {
+          display: grid;
+          grid-template-columns: repeat(4, 100px);
+          text-align: center;
+
+          .menu-wrapper__link-wrapper {
+            padding: 43px 15px;
+            cursor: pointer;
+            transition: .3s;
+            position: relative;
+
+            &:hover {
+              .drop-down {
+                display: block;
+                transition: .3s;
+              }
+            }
+
+            &:hover {
+              background: $tabsBg;
+
+              .menu-wrapper__link {
+                color: $tabsColor;
+                transition: .3s;
+              }
+            }
+
+            .menu-wrapper__link {
+              text-decoration: none;
+              font-size: 18px;
+              color: #626262;
+            }
+          }
+        }
+
+        .cart-wrapper {
+          display: grid;
+          grid-template-columns: repeat(3, 50px);
+          margin-left: 250px;
+          text-align: center;
+
+          .cart-wrapper__cart {
+            margin: 0 auto;
+          }
+
+          .cart-wrapper__arrow {
+            margin: 8px 0 0 5px;
+          }
+
+        }
+
+
+        .drop-down {
+          position: absolute;
+          top: 75px;
+          left: 0;
+          display: none;
+
+
+          .drop-down__link-wrapper {
+            @include drop-down-padding(15px 21px 15px 21px);
+            background: $tabsBg;
+            position: relative;
+
+            &:hover {
+              .men-drop-down {
+                @extend %display-block;
+              }
+
+              .women-drop-down {
+                @extend %display-block;
+              }
+
+              .adults-drop-down {
+                @extend %display-block;
+              }
+
+              .baby-drop-down {
+                @extend %display-block;
+              }
+            }
+
+            .drop-down__link {
+              @extend %header-link-styles;
+            }
+
+            .men-drop-down {
+              position: absolute;
+              top: 39px;
+              left: 97px;
+              display: none;
+              z-index: 2;
+              box-shadow: 3px -3px 17px 1px;
+
+              .men-drop-down__link-wrapper {
+                @include drop-down-padding(5px 21px 15px 21px);
+                background: $tabsBg;
+
+                .men-drop-down__link {
+                  @extend %header-link-styles;
+                }
+              }
+            }
+
+            .women-drop-down {
+              position: absolute;
+              top: 25px;
+              left: 97px;
+              display: none;
+              z-index: 2;
+              box-shadow: 3px -3px 17px 1px;
+
+              .women-drop-down__link-wrapper {
+                @include drop-down-padding(5px 21px 15px 21px);
+                background: $tabsBg;
+
+                .women-drop-down__link {
+                  @extend %header-link-styles;
+                }
+              }
+            }
+
+            .adults-drop-down {
+              position: absolute;
+              top: -20px;
+              left: 97px;
+              display: none;
+              z-index: 2;
+              box-shadow: 3px -3px 17px 1px;
+
+              .adults-drop-down__link-wrapper {
+                @include drop-down-padding(5px 21px 15px 21px);
+                background: $tabsBg;
+
+                .adults-drop-down__link {
+                  @extend %header-link-styles;
+                }
+              }
+            }
+
+            .baby-drop-down {
+              position: absolute;
+              top: -100px;
+              left: 97px;
+              display: none;
+              z-index: 2;
+              box-shadow: 3px -3px 17px 1px;
+
+              .baby-drop-down__link-wrapper {
+                @include drop-down-padding(5px 21px 15px 21px);
+                background: $tabsBg;
+
+                .baby-drop-down__link {
+                  @extend %header-link-styles;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+}
