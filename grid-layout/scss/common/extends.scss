@@ -6,3 +6,11 @@
 %display-block{
   display: block;
 }
+
+%hover{
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .3s;
+  }
+}

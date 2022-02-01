@@ -1,0 +1,23 @@
+footer{
+  background: #1b2330;
+  .footer-content-wrapper{
+    padding: 32px 0;
+    .footer-block{
+      display: grid;
+      grid-template-columns: repeat(2, 6fr);
+      justify-content: center;
+      align-items: center;
+
+      .icons-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        margin-left: 338px;
+
+        .icons-wrapper__icon{
+          margin: 0 auto;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

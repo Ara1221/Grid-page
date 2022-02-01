@@ -1,0 +1,78 @@
+.categories{
+  .clothes-block{
+    background-image: url("./../../../images/categories-zebra.png");
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    .categories-title{
+      text-align: center;
+      font-size: 115px;
+      font-weight: lighter;
+      color: $tabsColor;
+      text-transform: uppercase;
+    }
+
+    .categories-content-wrapper{
+      .img-wrapper{
+        .img-wrapper__low-heels{
+          @extend %hover;
+          position: absolute;
+          top: 250px;
+          left: 50px;
+        }
+
+        .img-wrapper__img{
+          @extend %hover;
+          position: absolute;
+          top: 277px;
+          left: 221px;
+        }
+
+        .img-wrapper__jeans{
+          @extend %hover;
+          position: absolute;
+          top: 240px;
+          left: 390px;
+        }
+
+        .img-wrapper__cap{
+          @extend %hover;
+          position: absolute;
+          top: 270px;
+          left: 560px;
+        }
+
+        .img-wrapper__high-heels{
+          @extend %hover;
+          position: absolute;
+          top: 320px;
+          left: 735px;
+        }
+
+        .img-wrapper__sport-t-shirt{
+          @extend %hover;
+          position: absolute;
+          top: 10px;
+          right: 130px;
+        }
+
+        .img-wrapper__sport-t-shirt{
+          @extend %hover;
+          position: absolute;
+          top: 257px;
+          right: 192px;
+        }
+
+        .img-wrapper__umbrella{
+          @extend %hover;
+          position: absolute;
+          top: 345px;
+          right: 42px;
+        }
+      }
+    }
+  }
+}

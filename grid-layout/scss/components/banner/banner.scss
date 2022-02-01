@@ -1,0 +1,28 @@
+.banner{
+  background-image: url("./../../images/zebra.png");
+  background-repeat: no-repeat;
+  height: 570px;
+  width: 100%;
+  background-position: center center;
+  .banner-content-wrapper{
+    position: relative;
+    .wrapper{
+      position: absolute;
+      top: 260px;
+      left: 400px;
+      .banner__inscription{
+        color: $tabsColor;
+        font-size: 22px;
+        letter-spacing: 35px;
+        position: absolute;
+        top: -5px;
+        left: 20px;
+      }
+
+      .banner__title{
+        font-size: 115px;
+        color: $tabsColor;
+      }
+    }
+  }
+}

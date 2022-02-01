@@ -1,0 +1,110 @@
+@media (max-width: $container-width) {
+  .banner{
+    .container {
+      width: $breakpoint-xxl;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-xxl) {
+  .banner{
+    .container {
+      width: $breakpoint-xl;
+
+      .wrapper {
+        position: absolute;
+        top: 260px;
+        left: 362px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-xl) {
+  .banner{
+    .container {
+      width: $breakpoint-lg;
+
+      .wrapper {
+        position: absolute;
+        top: 260px;
+        left: 260px;
+
+        .banner__inscription{
+          letter-spacing: 33px;
+        }
+
+        .banner__title{
+          font-size: 110px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .banner{
+    .container {
+      width: $breakpoint-md;
+
+      .wrapper {
+        position: absolute;
+        top: 260px;
+        left: 145px;
+
+        .banner__inscription{
+          letter-spacing: 22px;
+        }
+
+        .banner__title{
+          font-size: 85px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .banner{
+    .container {
+      width: $breakpoint-sm;
+
+      .wrapper {
+        position: absolute;
+        top: 260px;
+        left: 50px;
+
+        .banner__inscription{
+          letter-spacing: 22px;
+        }
+
+        .banner__title{
+          font-size: 85px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .banner {
+    .container {
+      width: 100%;
+
+      .wrapper {
+        position: absolute;
+        top: 260px;
+        left: 50px;
+
+        .banner__inscription{
+          letter-spacing: 15px;
+          font-size: 18px;
+        }
+
+        .banner__title{
+          font-size: 65px;
+        }
+      }
+    }
+  }
+}

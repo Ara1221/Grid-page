@@ -86,9 +86,19 @@ header .header-content-wrapper .header-menu nav .drop-down .drop-down__link-wrap
   display: block;
 }
 
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__umbrella:hover, .categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt:hover, .categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__high-heels:hover, .categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__cap:hover, .categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__jeans:hover, .categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__img:hover, .categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__low-heels:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -145,7 +155,7 @@ header .header-content-wrapper .header-menu nav .drop-down {
   display: none;
 }
 header .header-content-wrapper .header-menu nav .drop-down .drop-down__link-wrapper {
-  padding: 15px 21px 15px 21px;
+  padding: 15px 15px 15px 16px;
   background: #cf1a2b;
   position: relative;
 }
@@ -285,6 +295,580 @@ header .header-content-wrapper .header-menu nav .drop-down .drop-down__link-wrap
   header .header-content-wrapper .container .header-menu nav .logo-wrapper .logo-wrapper__logo {
     width: 80px;
   }
+}
+.banner {
+  background-image: url("./../../images/zebra.png");
+  background-repeat: no-repeat;
+  height: 570px;
+  width: 100%;
+  background-position: center center;
+}
+.banner .banner-content-wrapper {
+  position: relative;
+}
+.banner .banner-content-wrapper .wrapper {
+  position: absolute;
+  top: 260px;
+  left: 400px;
+}
+.banner .banner-content-wrapper .wrapper .banner__inscription {
+  color: white;
+  font-size: 22px;
+  letter-spacing: 35px;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+}
+.banner .banner-content-wrapper .wrapper .banner__title {
+  font-size: 115px;
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .banner .container {
+    width: 1400px;
+  }
+}
+@media (max-width: 1400px) {
+  .banner .container {
+    width: 1200px;
+  }
+  .banner .container .wrapper {
+    position: absolute;
+    top: 260px;
+    left: 362px;
+  }
+}
+@media (max-width: 1200px) {
+  .banner .container {
+    width: 992px;
+  }
+  .banner .container .wrapper {
+    position: absolute;
+    top: 260px;
+    left: 260px;
+  }
+  .banner .container .wrapper .banner__inscription {
+    letter-spacing: 33px;
+  }
+  .banner .container .wrapper .banner__title {
+    font-size: 110px;
+  }
+}
+@media (max-width: 992px) {
+  .banner .container {
+    width: 768px;
+  }
+  .banner .container .wrapper {
+    position: absolute;
+    top: 260px;
+    left: 145px;
+  }
+  .banner .container .wrapper .banner__inscription {
+    letter-spacing: 22px;
+  }
+  .banner .container .wrapper .banner__title {
+    font-size: 85px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container {
+    width: 576px;
+  }
+  .banner .container .wrapper {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+  }
+  .banner .container .wrapper .banner__inscription {
+    letter-spacing: 22px;
+  }
+  .banner .container .wrapper .banner__title {
+    font-size: 85px;
+  }
+}
+@media (max-width: 576px) {
+  .banner .container {
+    width: 100%;
+  }
+  .banner .container .wrapper {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+  }
+  .banner .container .wrapper .banner__inscription {
+    letter-spacing: 15px;
+    font-size: 18px;
+  }
+  .banner .container .wrapper .banner__title {
+    font-size: 65px;
+  }
+}
+.special-offer {
+  margin: 50px 0;
+}
+.special-offer .offers-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  justify-content: center;
+  align-items: center;
+}
+.special-offer .offers-wrapper .img-wrapper__img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  box-shadow: 7px 3px 20px 0;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .special-offer .container {
+    width: 1400px;
+  }
+  .special-offer .container .offers-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1400px) {
+  .special-offer .container {
+    width: 1200px;
+  }
+  .special-offer .container .offers-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1200px) {
+  .special-offer .container {
+    width: 992px;
+  }
+  .special-offer .container .offers-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .special-offer .container {
+    width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .special-offer .container {
+    width: 100%;
+  }
+  .special-offer .container .offers-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+.categories .clothes-block {
+  background-image: url("./../../../images/categories-zebra.png");
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.categories .clothes-block .categories-title {
+  text-align: center;
+  font-size: 115px;
+  font-weight: lighter;
+  color: white;
+  text-transform: uppercase;
+}
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__low-heels {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+}
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__img {
+  position: absolute;
+  top: 277px;
+  left: 221px;
+}
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__jeans {
+  position: absolute;
+  top: 240px;
+  left: 390px;
+}
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__cap {
+  position: absolute;
+  top: 270px;
+  left: 560px;
+}
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__high-heels {
+  position: absolute;
+  top: 320px;
+  left: 735px;
+}
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+  position: absolute;
+  top: 10px;
+  right: 130px;
+}
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+  position: absolute;
+  top: 257px;
+  right: 192px;
+}
+.categories .clothes-block .categories-content-wrapper .img-wrapper .img-wrapper__umbrella {
+  position: absolute;
+  top: 345px;
+  right: 42px;
+}
+
+@media (max-width: 1280px) {
+  .categories .container {
+    width: 1400px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__low-heels {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__img {
+    position: absolute;
+    top: 277px;
+    left: 221px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__jeans {
+    position: absolute;
+    top: 240px;
+    left: 390px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__cap {
+    position: absolute;
+    top: 270px;
+    left: 560px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__high-heels {
+    position: absolute;
+    top: 320px;
+    left: 735px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+    position: absolute;
+    top: 10px;
+    right: 130px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+    position: absolute;
+    top: 257px;
+    right: 192px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__umbrella {
+    position: absolute;
+    top: 345px;
+    right: 42px;
+  }
+}
+@media (max-width: 1400px) {
+  .categories .container {
+    width: 1200px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__low-heels {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__img {
+    position: absolute;
+    top: 277px;
+    left: 180px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__jeans {
+    position: absolute;
+    top: 240px;
+    left: 350px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__cap {
+    position: absolute;
+    top: 270px;
+    left: 520px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__high-heels {
+    position: absolute;
+    top: 320px;
+    left: 695px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+    position: absolute;
+    top: 10px;
+    right: 170px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+    position: absolute;
+    top: 247px;
+    right: 184px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__umbrella {
+    position: absolute;
+    top: 345px;
+    right: 45px;
+  }
+}
+@media (max-width: 1200px) {
+  .categories .container {
+    width: 992px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__low-heels {
+    position: absolute;
+    top: 203px;
+    left: 107px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__img {
+    position: absolute;
+    top: 343px;
+    left: 203px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__jeans {
+    position: absolute;
+    top: 203px;
+    left: 297px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__cap {
+    position: absolute;
+    top: 203px;
+    left: 487px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__high-heels {
+    position: absolute;
+    top: 343px;
+    left: 391px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+    position: absolute;
+    top: 203px;
+    right: 116px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__umbrella {
+    position: absolute;
+    top: 343px;
+    right: 212px;
+  }
+}
+@media (max-width: 992px) {
+  .categories .container {
+    width: 768px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__low-heels {
+    position: absolute;
+    top: 203px;
+    left: 15px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__img {
+    position: absolute;
+    top: 343px;
+    left: 106px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__jeans {
+    position: absolute;
+    top: 203px;
+    left: 195px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__cap {
+    position: absolute;
+    top: 203px;
+    left: 555px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__high-heels {
+    position: absolute;
+    top: 343px;
+    left: 291px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+    position: absolute;
+    top: 203px;
+    right: 194px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__umbrella {
+    position: absolute;
+    top: 343px;
+    right: 98px;
+  }
+}
+@media (max-width: 768px) {
+  .categories .container {
+    width: 576px;
+  }
+  .categories .container .categories-title {
+    font-size: 50px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__low-heels {
+    position: absolute;
+    top: 203px;
+    left: 30px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__img {
+    position: absolute;
+    top: 343px;
+    left: 28px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__jeans {
+    position: absolute;
+    top: 203px;
+    left: 350px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__cap {
+    position: absolute;
+    top: 78px;
+    left: 187px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__high-heels {
+    position: absolute;
+    top: 343px;
+    left: 350px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+    position: absolute;
+    top: 203px;
+    right: 187px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__umbrella {
+    position: absolute;
+    top: 343px;
+    right: 188px;
+  }
+}
+@media (max-width: 576px) {
+  .categories .container {
+    width: 100%;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__low-heels {
+    position: absolute;
+    top: 203px;
+    left: 4px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__img {
+    position: absolute;
+    top: 348px;
+    left: 4px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__jeans {
+    position: absolute;
+    top: 203px;
+    left: 298px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__cap {
+    position: absolute;
+    top: 78px;
+    left: 153px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__high-heels {
+    position: absolute;
+    top: 343px;
+    left: 300px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__sport-t-shirt {
+    position: absolute;
+    top: 203px;
+    right: 144px;
+  }
+  .categories .container .categories-content-wrapper .img-wrapper .img-wrapper__umbrella {
+    position: absolute;
+    top: 343px;
+    right: 140px;
+  }
+}
+.jeans-block {
+  background: #fbfbf9;
+  padding-bottom: 80px;
+}
+.jeans-block .content-wrapper {
+  position: relative;
+}
+.jeans-block .content-wrapper .lewis-logo-wrapper .lewis-logo-wrapper__logo {
+  position: absolute;
+  top: -16px;
+  left: 90px;
+}
+.jeans-block .content-wrapper .grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 6fr);
+}
+.jeans-block .content-wrapper .grid-box .jeans-and-description-wrapper {
+  padding-top: 200px;
+}
+.jeans-block .content-wrapper .grid-box .jeans-and-description-wrapper__title {
+  font-size: 50px;
+  font-weight: bold;
+}
+.jeans-block .content-wrapper .grid-box .jeans-and-description-wrapper__text {
+  max-width: 540px;
+  font-size: 14px;
+}
+.jeans-block .content-wrapper .grid-box .jeans-and-description-wrapper .cost-and-order-button {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  position: relative;
+  margin-top: 30px;
+}
+.jeans-block .content-wrapper .grid-box .jeans-and-description-wrapper .cost-and-order-button__cost {
+  font-size: 36px;
+  font-weight: bold;
+}
+.jeans-block .content-wrapper .grid-box .jeans-and-description-wrapper .cost-and-order-button__order-button {
+  border-radius: 5px;
+  padding: 5px 15px 5px 50px;
+  background-color: #cf1a2b;
+  display: inline-block;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+.jeans-block .content-wrapper .grid-box .jeans-and-description-wrapper .cost-and-order-button__order-button:hover {
+  background-color: #40d719;
+  transition: 0.3s;
+}
+.jeans-block .content-wrapper .grid-box .jeans-and-description-wrapper .cost-and-order-button__cart {
+  position: absolute;
+  top: 12px;
+  left: 310px;
+}
+.jeans-block .content-wrapper .grid-box .Big-jeans-wrapper {
+  padding-top: 20px;
+}
+.jeans-block .content-wrapper .cards-wrapper {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(5, 210px);
+}
+.jeans-block .content-wrapper .cards-wrapper .jeans-number {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a2a2a2;
+  padding: 0 28px;
+  box-shadow: 9px 12px 20px 0;
+}
+
+footer {
+  background: #1b2330;
+}
+footer .footer-content-wrapper {
+  padding: 32px 0;
+}
+footer .footer-content-wrapper .footer-block {
+  display: grid;
+  grid-template-columns: repeat(2, 6fr);
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-content-wrapper .footer-block .icons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  margin-left: 338px;
+}
+footer .footer-content-wrapper .footer-block .icons-wrapper .icons-wrapper__icon {
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
