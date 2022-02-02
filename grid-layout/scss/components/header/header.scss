@@ -68,7 +68,7 @@ header{
 
 
           .drop-down__link-wrapper {
-            @include drop-down-padding(15px 15px 15px 16px);
+            @include drop-down-padding(15px 9px 15px 4px);
             background: $tabsBg;
             position: relative;
 

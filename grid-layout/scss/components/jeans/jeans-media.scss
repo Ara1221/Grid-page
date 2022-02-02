@@ -1,0 +1,126 @@
+@media (max-width: $container-width) {
+  .jeans-block{
+    .container{
+      width: $breakpoint-xxl;
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-xxl) {
+  .jeans-block{
+    .container {
+      width: $breakpoint-xl;
+
+      .content-wrapper{
+        .lewis-logo-wrapper{
+          .lewis-logo-wrapper__logo{
+            position: absolute;
+            top: -16px;
+            left: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-xl) {
+  .jeans-block{
+    .container {
+      width: $breakpoint-lg;
+
+      .cards-wrapper {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 210px);
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .jeans-block{
+    .container {
+      width: $breakpoint-md;
+
+      .grid-box {
+        .jeans-and-description-wrapper{
+          grid-row-start: 2;
+          padding-top: 80px;
+        }
+
+        .Big-jeans-wrapper{
+          margin: 175px 0 0 90px ;
+          .Big-jeans-wrapper__jeans{
+            width: 350px;
+            height: 300px;
+          }
+        }
+      }
+
+      .cards-wrapper {
+        grid-row-gap: 50px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-md) {
+  .jeans-block{
+    .container {
+      width: $breakpoint-sm;
+
+      .cards-wrapper {
+        grid-template-columns: repeat(2, 250px);
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-sm) {
+  .jeans-block{
+    .container {
+      width: 100%;
+
+      .grid-box {
+        grid-template-columns: repeat(1, 6fr);
+        .jeans-and-description-wrapper {
+          padding-top: 80px;
+
+          &__title {
+            font-size: 42px;
+          }
+
+          &__text {
+            max-width: 500px;
+          }
+
+          .cost-and-order-button {
+            display: grid;
+            grid-template-columns: repeat(1, 250px);
+
+
+            &__order-button {
+              margin-top: 10px;
+            }
+
+            &__cart {
+              position: absolute;
+              top: 75px;
+              left: 10px;
+            }
+
+            .Big-jeans-wrapper {
+              margin: 175px 0 0 90px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
